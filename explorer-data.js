@@ -1430,8 +1430,10 @@ const DOSSIERS = {
         "unit": "milliers",
         "source": "active",
         "period": "2025",
-        "note": "",
-        "digits": 0
+        "note": "Personnes en emploi ou au chômage au sens du BIT, âgées de 15 ans ou plus, vivant en logement ordinaire. Moyenne annuelle.",
+        "digits": 0,
+        "displayDivisor": 1000,
+        "displayUnit": "millions de personnes"
       },
       {
         "name": "Chômage · T2 2026",
@@ -1439,7 +1441,7 @@ const DOSSIERS = {
         "unit": "%",
         "source": "chomage",
         "period": "T2 2026",
-        "note": "",
+        "note": "Taux BIT trimestriel corrigé des variations saisonnières ; part des chômeurs dans la population active.",
         "digits": 1
       },
       {
@@ -1448,7 +1450,7 @@ const DOSSIERS = {
         "unit": "€/mois EQTP",
         "source": "salaires",
         "period": "2024",
-        "note": "",
+        "note": "Secteur privé, net mensuel en équivalent temps plein. La médiane partage la distribution en deux moitiés. Nouveau champ comprenant apprentis, stagiaires et Mayotte.",
         "digits": 0
       },
       {
@@ -1457,7 +1459,7 @@ const DOSSIERS = {
         "unit": "Md€",
         "source": "ij",
         "period": "2024",
-        "note": "",
+        "note": "Indemnités journalières maladie, AT/MP et maternité-paternité, tous régimes de base hors fonction publique.",
         "digits": 1
       }
     ],
@@ -2700,7 +2702,9 @@ const DOSSIERS = {
         "source": "migrants",
         "period": "2024 provisoire",
         "note": "Immigré : personne née étrangère à l’étranger, même devenue française. Étranger : personne sans nationalité française, quel que soit son lieu de naissance. Données 2024 provisoires ; rupture de série signalée par l’Insee en juin 2026.",
-        "digits": 0
+        "digits": 0,
+        "displayDivisor": 1000,
+        "displayUnit": "millions de personnes"
       },
       {
         "name": "Étrangers en France",
@@ -2709,7 +2713,9 @@ const DOSSIERS = {
         "source": "migrants",
         "period": "2024 provisoire",
         "note": "Immigré : personne née étrangère à l’étranger, même devenue française. Étranger : personne sans nationalité française, quel que soit son lieu de naissance. Données 2024 provisoires ; rupture de série signalée par l’Insee en juin 2026.",
-        "digits": 0
+        "digits": 0,
+        "displayDivisor": 1000,
+        "displayUnit": "millions de personnes"
       },
       {
         "name": "Premiers titres délivrés",
