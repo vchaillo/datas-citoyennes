@@ -10,3 +10,5 @@
 @media(max-width:800px){.dossier-grid{grid-template-columns:1fr}.dossier-tabs .dossier-export{margin-left:0}.fact-timeline li{grid-template-columns:90px 1fr;gap:8px}.fact-timeline li>div{padding-left:15px}.dossier-tabs button{font-size:.78rem;padding:9px 10px}.dossier-links{font-size:.78rem}.kpi-value .fact-link{font-size:1.2rem}}
 
 .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin:22px 0}.kpi-grid .kpi{padding:22px;text-align:left}.kpi-grid .kpi.green{background:#e8f2dc;border-color:#d9e9c8}.kpi-grid .kpi-value{margin:12px 0 8px}.kpi-grid .kpi p{font-size:.75rem;color:#6a7280}.sidebar{overflow-y:auto}@media(max-width:600px){.kpi-grid{grid-template-columns:1fr}.kpi-grid .kpi{display:block}.kpi-grid .kpi-value{margin:8px 0}.kpi-grid .kpi p{margin:0}}
+
+.timeline-filter-label{display:grid;gap:8px;font-size:.8rem;max-width:420px;color:#66705e}.timeline-filter{font:inherit;padding:12px;border:1px solid #dedfd8;border-radius:10px;background:#fafbf7;color:#253323}.fact-timeline li[hidden]{display:none}
