@@ -27,8 +27,14 @@ const BUDGET = {
 const THEMES = [
   {id:'economie', title:'Économie & finances', icon:'◉', color:'#dcebc9', description:'Les recettes, les dépenses et les choix collectifs.', topics:['Budget de l’État','Dette & déficit','Fiscalité'], available:true},
   {id:'ecologie', title:'Écologie & énergie', icon:'❋', color:'#d5ece1', description:'Comprendre notre empreinte et nos ressources.', topics:['Climat','Mix énergétique','Biodiversité']},
-  {id:'societe', title:'Société & population', icon:'◎', color:'#e5dffa', description:'La France, ses habitants et leurs conditions de vie.', topics:['Démographie','Revenus','Inégalités']},
+  {id:'societe', title:'Société & population', icon:'◎', color:'#e5dffa', description:'La France, ses habitants et leurs conditions de vie.', topics:['Migrations','Conditions de vie','Population'],available:true,route:'#/migrations'},
   {id:'sante', title:'Santé & solidarité', icon:'✚', color:'#f8dfe4', description:'Les soins, la protection sociale et l’accès aux services.', topics:['Assurance maladie','Retraites','Accès aux soins']},
   {id:'education', title:'Éducation & recherche', icon:'◇', color:'#f8eacb', description:'De l’école à la recherche, les savoirs en chiffres.', topics:['École','Enseignement supérieur','Recherche']},
   {id:'territoires', title:'Territoires & mobilités', icon:'▦', color:'#dbe7fb', description:'Nos lieux de vie et les liens qui les relient.', topics:['Logement','Transports','Collectivités']}
 ];
+
+THEMES.splice(1,0,
+ {id:'emploi',title:'Emploi & travail',icon:'▥',color:'#e5dffa',description:'Activité, chômage, salaires et santé au travail.',topics:['Chômage','Salaires','Conditions de travail'],available:true,route:'#/emploi'},
+ {id:'securite',title:'Sécurité & défense',icon:'◇',color:'#dbe7fb',description:'Délinquance enregistrée, enquêtes et engagements militaires.',topics:['Infractions','Élucidation','Défense'],available:true,route:'#/securite'},
+ {id:'politique',title:'Vie politique & institutions',icon:'▦',color:'#f8eacb',description:'Les personnes, les scrutins et les équilibres de la Ve République.',topics:['Gouvernements','Assemblée','Référendums'],available:true,route:'#/politique'}
+);

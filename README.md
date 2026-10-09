@@ -34,3 +34,10 @@ Create the public repository `vchaillo/datas-citoyennes`, push these files to `m
 - `.github/workflows/pages.yml`: deployment.
 
 Visible interface copy is French; code and comments are English. The app has keyboard-operable charts, native dialogs, searchable tables, reduced-motion support and a mobile layout. Google Fonts is optional; system fonts are the fallback.
+
+
+## Additional dossiers
+
+Employment (activity, unemployment, benefits, contracts, salaries, contributions and occupational health), recorded crime, migration and living conditions, defense programming and historical operations, and political institutions under the Fifth Republic. Each metric retains its original unit, period and source; computed breakdowns explain their arithmetic. Political group charts are dated historical snapshots, not live parliamentary counts. Sources were reviewed on 9 October 2026. No automatic updates are implied.
+
+`explorer-data.js` holds versioned data and source metadata. `explorer.js` renders reusable accessible doughnuts, line charts, bars, parliamentary seating diagrams and timelines, with source dialogs and per-dossier JSON exports. These files are loaded before `app.js` to make hash routes work directly on GitHub Pages.
