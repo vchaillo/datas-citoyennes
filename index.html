@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explorez les données publiques françaises. Recettes, dépenses et équilibre du budget de l’État, en graphiques interactifs et avec des sources officielles.">
+  <meta name="theme-color" content="#111827"><title>Datas Citoyennes · Explorer les données publiques</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <aside class="sidebar">
+    <a class="brand" href="#/"> <span class="brand-symbol">dc<span>✳</span></span><span>datas<br>citoyennes<span class="brand-dot">.</span></span></a>
+    <p class="nav-caption">L’EXPLORATEUR PUBLIC</p>
+    <nav aria-label="Navigation principale">
+      <a href="#/" data-nav="home"><span>◈</span> Explorer les thèmes</a>
+      <a href="#/economie" data-nav="economy"><span>◉</span> Économie & finances</a>
+      <a class="subnav" href="#/economie/budget" data-nav="budget">Budget de l’État</a>
+      <a href="#/theme/ecologie" data-nav="ecologie"><span>❋</span> Écologie & énergie</a>
+      <a href="#/theme/societe" data-nav="societe"><span>◎</span> Société & population</a>
+      <a href="#/theme/sante" data-nav="sante"><span>✚</span> Santé & solidarité</a>
+      <a href="#/theme/education" data-nav="education"><span>◇</span> Éducation & recherche</a>
+      <a href="#/theme/territoires" data-nav="territoires"><span>▦</span> Territoires & mobilités</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="small-star">✳</span><strong>Des chiffres. Du contexte.</strong><p>Chaque donnée vous ramène<br>à sa source.</p><a href="#/sources">Sources & méthode</a></div>
+  </aside>
+  <div class="workspace"><header class="topbar"><a href="#/" class="mobile-brand">dc✳</a><span>France <span class="france-flag" aria-label="France"></span></span><span class="top-note">Données publiques · Exploration libre</span><a href="https://github.com/vchaillo/datas-citoyennes" target="_blank" rel="noopener">Code source ↗</a></header>
+    <main id="main" tabindex="-1"></main>
+    <footer>Datas Citoyennes <span>Un regard visuel sur les données publiques.</span><a href="#/sources">Méthode & sources</a></footer>
+  </div>
+  <dialog id="detail"><div id="dialog-content"></div><form method="dialog"><button class="button close-button">Fermer</button></form></dialog>
+  <script src="data.js"></script><script src="app.js"></script>
+</body></html>
